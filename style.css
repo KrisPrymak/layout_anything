@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+
+.header-container {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  padding: 17px 25px 0 21px;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 20px;
+  margin: 0 auto;
+}
+.header__account {
+  cursor: pointer;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.header__account-noAuth {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.header__account-auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.header__account-auth::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 1px;
+  background: #EBEBF1;
+  top: -21px;
+  left: -19px;
+}
+.header__account__name {
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #768298;
+}
+.header__account__ava {
+  width: 40px;
+  height: 40px;
+}
+
+.seacrh-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EBEBF1;
+  border-radius: 5px;
+  width: 100%;
+}
+.seacrh-form__button {
+  background-image: url("./img/Ellipsesearch.svg");
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #FFFFFF;
+  padding-left: 46px;
+}
+.seacrh-form__text {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+.seacrh-form__block {
+  width: 100%;
+  margin-left: -5px;
+  margin-top: 5px;
+}
+.seacrh-form__place {
+  border: none;
+  height: 40px;
+  width: 100%;
+}
+.seacrh-form__place::-webkit-input-placeholder {
+  color: #BBC4D6;
+  font-weight: 400;
+}
+.seacrh-form__place::-moz-placeholder {
+  color: #BBC4D6;
+  font-weight: 400;
+}
+.seacrh-form__place:-ms-input-placeholder {
+  color: #BBC4D6;
+  font-weight: 400;
+}
+.seacrh-form__place::-ms-input-placeholder {
+  color: #BBC4D6;
+  font-weight: 400;
+}
+.seacrh-form__place::placeholder {
+  color: #BBC4D6;
+  font-weight: 400;
+}
+
+.main {
+  padding: 70px 20px 73px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.partners__title {
+  font-size: 36px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #121920;
+}
+.partners__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.partners__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #EBEBF1;
+  padding: 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.partners__item:hover {
+  -webkit-box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+          box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+}
+.partners__img {
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 17px 24px 0 21px;
+    position: relative;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .header__account {
+    margin-right: -4px;
+  }
+  .header__account-noAuth {
+    display: block;
+  }
+  .header__account-auth {
+    display: none;
+  }
+  .header .seacrh-form__button {
+    margin-left: -14px;
+    margin-bottom: 10px;
+  }
+  .header .seacrh-form__block {
+    margin-bottom: 10px;
+  }
+  .seacrh-form {
+    width: 100%;
+    height: 41px;
+    margin-top: 16px;
+    border: none;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .seacrh-form::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #EBEBF1;
+    top: 62px;
+    left: 0;
+  }
+  .main {
+    padding: 68px 20px 73px 21px;
+  }
+  .partners__title {
+    font-size: 28px;
+  }
+  .partners__item {
+    width: 100%;
+    height: 140px;
+  }
+  .partners__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .partners__item .parners__img {
+    max-width: 270px;
+  }
+  .partners__img {
+    width: 100%;
+  }
+  .partners__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    padding: 20px;
+  }
+  .header__account {
+    margin-left: 30px;
+  }
+  .header__logo {
+    margin-right: 20px;
+  }
+  .main {
+    padding-top: 63px;
+  }
+  .main__section {
+    margin: 0 auto;
+  }
+  .seacrh-form {
+    max-width: 344px;
+  }
+  .partners__title {
+    font-size: 28px;
+  }
+  .partners__item {
+    width: 31%;
+  }
+  .partners__item:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+  .partners__item:not(:nth-last-child(-n+1)) {
+    margin-bottom: 20px;
+  }
+  .partners__img {
+    max-width: 200px;
+  }
+}
+@media (min-width: 1240px) {
+  .header {
+    padding: 15px 100px;
+  }
+  .main {
+    padding: 70px 100px;
+  }
+  .seacrh-form {
+    max-width: 835px;
+    width: 100%;
+    margin-right: 25px;
+  }
+  .partners__item {
+    width: 287.5px;
+  }
+  .partners__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  .partners__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+  }
+  .partners__img {
+    max-width: 234px;
+  }
+}
